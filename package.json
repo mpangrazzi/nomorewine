@@ -1,0 +1,11 @@
+{
+  "name": "nomorewine",
+  "version": "0.0.1",
+  "description": "A simple JSON API which respond with some random Robert Baratheon's quotes (ita)",
+  "main": "index.js",
+  "author": "Michele Pangrazzi <m.pangrazzi@futur3.it>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.7.2"
+  }
+}
