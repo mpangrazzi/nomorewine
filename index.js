@@ -4,6 +4,15 @@ var quotes = require('./quotes.json').quotes;
 var app = express();
 
 app.get('/', function(req, res) {
+
+  var crazyness = rand(1, 100);
+
+  if (crazyness >= 90 && crazyness <= 95) {
+    return res.json([]);
+  } else if (crazyness > 95) {
+    return res.status(500).end('Troppo vino');
+  }
+
   var n = rand(0, quotes.length - 1);
   var r = [];
 
