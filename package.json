@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "A simple JSON API which respond with some random Robert Baratheon's quotes (ita)",
   "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "start-dev": "supervisor ./index.js"
+  },
   "author": "Michele Pangrazzi <m.pangrazzi@futur3.it>",
   "license": "MIT",
   "dependencies": {
