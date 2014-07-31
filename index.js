@@ -21,6 +21,8 @@ app.get('/', function(req, res) {
     if (r.indexOf(q) === -1) r.push(q);
   }
 
+  res.set('Access-Control-Allow-Origin', '*');
+  res.set('Access-Control-Allow-Methods', 'GET');
   res.json(r);
 });
 
